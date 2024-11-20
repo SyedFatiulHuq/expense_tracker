@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="horizontal"
+android:weightSum="3"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/category_list_item"
+android:padding="16dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/category_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000"
+        android:textSize="16.0dp"
+        android:text="Category Name"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+
+        android:padding="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:onClick="handleClick"/>
+
+    <TextView
+        android:id="@+id/max_expenses"
+        android:layout_gravity="right"
+        android:textColor="#777070"
+        android:textSize="16.0dp"
+        android:text="$145"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+
+        android:layout_marginLeft="50dp"
+        android:padding="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="right"/>
+</RelativeLayout>
